@@ -1,0 +1,9 @@
+﻿dev_handle = 0
+pixels = 4096
+wavelength = [0.0] * 4096
+spectraldata = [0.0] * 4096
+stopscanning = True
+color_config = []
+file_dir = 'D:\File\data_oes\data_6_10'
+pre_score = 'D:\File\data_oes\score_file\score_2022_08_25_20_17_45.xlsx'
+pre_load = 'D:\File\data_oes\load_file\load_2022_08_25_20_17_45.xlsx'

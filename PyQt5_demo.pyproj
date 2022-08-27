@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3a74ca7e-b77a-4d19-9f36-d0e73bebead2}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>PyQt5_demo.pyw</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.6-32</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="avaspec.py" />
+    <Compile Include="form1.py" />
+    <Compile Include="globals.py" />
+    <Compile Include="PyQt5_demo.pyw" />
+    <Compile Include="renderarea.py" />
+    <Compile Include="Ubuntu\avaspec.py" />
+    <Compile Include="Ubuntu\form1.py" />
+    <Compile Include="Ubuntu\globals.py" />
+    <Compile Include="Ubuntu\PyQt5_demo.py" />
+    <Compile Include="Ubuntu\renderarea.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="convert_ui_to_py.txt" />
+    <Content Include="Ubuntu\convert_ui_to_py.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ubuntu" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+    <InterpreterReference Include="Global|PythonCore|3.6-32" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
